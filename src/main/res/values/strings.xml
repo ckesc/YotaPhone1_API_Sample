@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name_bs">YotaPhone API</string>
+    <string name="app_name">YotaPhone API</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="main_btn_bs_activity">BSActivity</string>
+    <string name="main_btn_bs_notification">BSNotification</string>
+    <string name="main_btn_waveforms">Waveforms</string>
+    <string name="main_btn_rotation">Rotation Algorithm</string>
+    <string name="main_btn_dithering">Dithering</string>
+    
+    <string name="notification_title">title</string>
+    <string name="notification_description">description</string>
+    <string name="notification_mode_full">Full-Screen notification</string>
+    <string name="notification_mode_half">Half-screen notification</string>
+    <string name="notification_mode_bar">Bar notification</string>
+
+</resources>

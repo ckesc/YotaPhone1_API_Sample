@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yotadevices.api.sample"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="com.yotadevices.framework.permission.ACCESS_BACKSCREEN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.yotadevices.BS_TITLE"
+            android:value="@string/app_name_bs" />
+
+        <activity
+            android:name="com.yotadevices.api.sample.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yotadevices.api.sample.SimpleBSActivity"
+            android:label="@string/main_btn_bs_activity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yotadevices.api.sample.BSNotificationActivity"
+            android:label="@string/main_btn_bs_notification"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yotadevices.api.sample.WaveformsActivity"
+            android:label="@string/main_btn_waveforms"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yotadevices.api.sample.RotationAlgorithmActivity"
+            android:label="@string/main_btn_rotation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yotadevices.api.sample.DitheringActivity"
+            android:label="@string/main_btn_dithering"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.yotadevices.api.sample.bs.MyBackScreenActivity" />
+        <service android:name="com.yotadevices.api.sample.bs.FullScreenBackScreenActivity" />
+        <service android:name="com.yotadevices.api.sample.bs.WaveformsBackScreenActivity" />
+        <service android:name="com.yotadevices.api.sample.bs.DitherBackScreenActivity" />
+
+        <uses-library
+            android:name="com.yotadevices.yotaphone.sdk.1.0"
+            android:required="true" />
+    </application>
+
+</manifest>

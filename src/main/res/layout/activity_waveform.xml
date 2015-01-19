@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edit_text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:hint="message" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip" >
+
+        <RadioButton
+            android:id="@+id/wave_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="WAVEFORM_GC_FULL" />
+
+        <RadioButton
+            android:id="@+id/wave_partial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WAVEFORM_GC_PARTIAL" />
+
+        <RadioButton
+            android:id="@+id/wave_du"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WAVEFORM_DU" />
+
+        <RadioButton
+            android:id="@+id/wave_a2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WAVEFORM_A2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_draw_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="Draw message" />
+
+</LinearLayout>

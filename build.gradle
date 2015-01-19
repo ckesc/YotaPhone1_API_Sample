@@ -1,0 +1,46 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.0.0'
+        classpath 'org.ajoberstar:gradle-git:0.9.+'
+    }
+
+}
+
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.1.1'
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 21
+        versionCode 5
+        versionName version
+    }
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+//            applicationVariants.all { variant ->
+//                variant.outputs.each { output ->
+//                    def file = output.outputFile
+//                    output.outputFile = new File(file.parent, "WebLikeABook-" + defaultConfig.versionName + ".apk")
+//                }
+//            }
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    provided fileTree(dir: 'libs/provided/', include: ['*.jar'])
+    compile fileTree(dir: 'libs/compile/', include: ['*.jar'])
+
+    compile 'com.android.support:support-v4:21.0.2'
+}
+
