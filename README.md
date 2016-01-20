@@ -8,7 +8,7 @@ You need android SDK API v17 and set enviroment variable `ANDROID_HOME`
 ## Windows
 Run `gradlew.bat build`
 ## Linux
-Run `.gradlew build`
+Run `./gradlew build`
 # Install
 ## Windows
 Run `gradlew.bat installDebug`
