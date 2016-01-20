@@ -13,4 +13,4 @@ Run `.gradlew build`
 ## Windows
 Run `gradlew.bat installDebug`
 ## Linux
-Run `.gradlew installDebug`
+Run `./gradlew installDebug`
