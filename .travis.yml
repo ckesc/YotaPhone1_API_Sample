@@ -1,14 +1,19 @@
 language: android
 android:
   components:
-    # use the latest revision of Android SDK Tools
-    - platform-tools
-    - tools
-    
-    - build-tools-23.0.3
-
-    # The SDK version used to compile your project
-    - android-17
-
-    - extra-google-m2repository
-    - extra-android-m2repository
+  # use the latest revision of Android SDK Tools
+  - platform-tools
+  - tools
+   
+  - build-tools-23.0.3
+  - android-17
+  - extra-google-m2repository
+  - extra-android-m2repository
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: P/wGXBUblm4cXtVpSVyb9Nt+oXz1YrRHYUmHVn8H1cs/8uH4mbYBVPWeetkUd+YxaC1wO0gpXPtLh1QXtxqTvsBkuK4hat7mRI+qiZa4/Wwz1NXi40xmTwWhMRhN9AjTbxkL7VgrqfPgjvXtf8d2LD9Et4qalbr2SCXdlBQOwAI=
+  file: build/outputs/apk/YotaPhone1_API_Sample-debug.apk
+  on:
+    repo: ckesc/YotaPhone1_API_Sample
